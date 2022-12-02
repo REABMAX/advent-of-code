@@ -8,7 +8,7 @@ import (
 
 // https://adventofcode.com/2022/day/1
 func main() {
-	cl, err := calories.ReadCaloriesList("calories.txt")
+	cl, err := calories.ReadFromFile("calories.txt")
 	if err != nil {
 		log.Fatalln(err)
 	}

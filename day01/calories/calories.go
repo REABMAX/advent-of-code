@@ -18,7 +18,7 @@ func (e *elf) Calories() int { return e.calories }
 
 type CaloryList []elf
 
-func ReadCaloriesList(fileName string) (CaloryList, error) {
+func ReadFromFile(fileName string) (CaloryList, error) {
 	f, err := os.Open(fileName)
 	if err != nil {
 		log.Fatalln(err)
