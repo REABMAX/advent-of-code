@@ -1,7 +1,5 @@
-= Advent of code 2022
+= Advent of code
 
-This repository contains solutions for the 2022's advent of code tasks.
-
-Each day of the advent calendar has its own project located in its own directory.
+This repository contains solutions for advent of code tasks.
 
 Don't expect super elegant/smart solutions here, I'm trying to play around a bit ;)
