@@ -46,7 +46,7 @@ type Compartments [2][]ItemType
 func CompartmentsFromString(s string) Compartments {
 	types := []ItemType(s)
 	cLen := len(types) / 2
-	first := types[0:cLen]
+	first := types[:cLen]
 	second := types[cLen:]
 	return Compartments{first, second}
 }
