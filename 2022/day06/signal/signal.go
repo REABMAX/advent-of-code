@@ -15,7 +15,7 @@ func GetStartOfMessage(sig string) (int, error) {
 func detectMarker(sig string, distinctChars int) (int, error) {
 	signal := []rune(sig)
 
-	for i := distinctChars + 1; i < len(signal); i++ {
+	for i := distinctChars; i < len(signal); i++ {
 		if len(setOf(signal[i-distinctChars:i])) == distinctChars {
 			return i, nil
 		}
